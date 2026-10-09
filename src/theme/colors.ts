@@ -1,0 +1,65 @@
+export const colors = {
+  bgRoot: '#051714',
+  bgCard: '#123830',
+  bgCardAlt: '#0E2A25',
+  bgCardMuted: '#0F3129',
+  bgInput: '#0E332C',
+  bgSheet: '#0A2621',
+  bgDashed: '#0A2621',
+  bgFreeHighlight: '#143F35',
+  iconChipBg: '#12463C',
+
+  tealGradStart: '#0A3F35',
+  tealGradMid: '#0C4A3E',
+  tealGradEnd: '#116B58',
+  primary: '#0E9B6C',
+  accent: '#4FD1A0',
+  mint: '#B8EDE6',
+  onTeal: '#EAFBF7',
+
+  textPrimary: '#EAF3F0',
+  textHeadline: '#F2FBF8',
+  textSecondary: '#DCEAE6',
+  textMuted: '#A9C4BE',
+  textFaint: '#8FAAA4',
+  textQuiet: '#7B948F',
+  textDisabled: '#6E8A84',
+  textTealLabel: '#9FDCD3',
+
+  gold: '#E0BE85',
+  amberBody: '#F1DDB6',
+  amberBtnBg: '#F0D9A8',
+  amberBtnText: '#241C06',
+  amberCardText: '#F6E4C6',
+  goldEyebrow: '#D9BC86',
+  goldMeta: '#C9A96A',
+  goldBody: '#E4CFA4',
+  amberCardBg: '#33290F',
+  premiumGradStart: '#2C2411',
+  premiumGradEnd: '#5C4520',
+
+  onMintText: '#002B27',
+  onMintTextAlt: '#04231C',
+  brokenStreakBorder: '#4A3A16',
+  freeCardBorder: '#2F7F69',
+  outlineBorder: '#2C5A50',
+  divider: '#1B4239',
+
+  white: '#FFFFFF',
+  transparent: 'transparent',
+} as const;
+
+export const categoryTints: Record<string, { light: string; bg: string; dark: string }> = {
+  rizq: { light: '#E9C88F', bg: 'rgba(233,200,143,.22)', dark: '#C79A54' },
+  debt: { light: '#84DCC6', bg: 'rgba(132,220,198,.20)', dark: '#3FA98F' },
+  protect: { light: '#95C6EA', bg: 'rgba(149,198,234,.20)', dark: '#4E90C4' },
+  health: { light: '#ABE2A3', bg: 'rgba(171,226,163,.20)', dark: '#5EAE5C' },
+  status: { light: '#EDBBC7', bg: 'rgba(237,187,199,.20)', dark: '#C4808F' },
+  family: { light: '#F3ADA3', bg: 'rgba(243,173,163,.20)', dark: '#CE7468' },
+  birth: { light: '#CDB9ED', bg: 'rgba(205,185,237,.20)', dark: '#9276C4' },
+  calm: { light: '#A4D8DD', bg: 'rgba(164,216,221,.20)', dark: '#5CA5AC' },
+  knowledge: { light: '#EFD892', bg: 'rgba(239,216,146,.20)', dark: '#C7A94E' },
+  travel: { light: '#A1CAB5', bg: 'rgba(161,202,181,.20)', dark: '#5F9B7D' },
+};
+
+export const tileIconColor = '#06201B';

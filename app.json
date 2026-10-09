@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Wasīla",
+    "slug": "wasila-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#051714",
+    "ios": {
+      "supportsTablet": true,
+      "backgroundColor": "#051714",
+      "bundleIdentifier": "com.anonymous.wasilaapp",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#051714",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.wasilaapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Wasīla uses your location to show accurate prayer times, Qibla direction, and your city on the dashboard."
+        }
+      ],
+      "./plugins/withFixAndroidNotificationSounds",
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/audio/adhan_notification.mp3",
+            "./assets/audio/adhan_notification.caf"
+          ]
+        }
+      ],
+      "./plugins/withPrayerNotificationManifest",
+      "./plugins/withFixedFontScale",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-transparent.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0A1512"
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": true
+        }
+      ],
+      "expo-secure-store"
+    ]
+  }
+}

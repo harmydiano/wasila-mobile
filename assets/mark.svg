@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="g-ground" cx="50%" cy="48%" r="62%">
+      <stop offset="0%"   stop-color="#0C2721"/>
+      <stop offset="100%" stop-color="#051714"/>
+    </radialGradient>
+    <radialGradient id="g-bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#E9FFF4" stop-opacity=".80"/>
+      <stop offset="34%"  stop-color="#7BE0BE" stop-opacity=".50"/>
+      <stop offset="100%" stop-color="#7BE0BE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect id="ground" width="1024" height="1024" fill="url(#g-ground)"/>
+  <circle id="glow" cx="512" cy="520" r="300" fill="url(#g-bloom)"/>
+  <polygon id="star" points="512.0,355.0 538.0,457.2 628.7,403.3 574.8,494.0 677.0,520.0 574.8,546.0 628.7,636.7 538.0,582.8 512.0,685.0 486.0,582.8 395.3,636.7 449.2,546.0 347.0,520.0 449.2,494.0 395.3,403.3 486.0,457.2" fill="#7BE0BE"/>
+  <circle cx="512" cy="520" r="34" fill="#E9FFF4"/>
+  <path id="arch" fill="#E1B347" fill-rule="evenodd"
+        d="M 272 880 L 272 440 C 272 322 306 250 380 198 C 438 156 494 148 512 108 C 530 148 586 156 644 198 C 718 250 752 322 752 440 L 752 880 Z M 316 836 L 316 448 C 316 344 346 282 410 236 C 460 200 500 190 512 168 C 524 190 564 200 614 236 C 678 282 708 344 708 448 L 708 836 Z"/>
+</svg>
